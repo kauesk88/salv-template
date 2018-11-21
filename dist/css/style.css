@@ -1,0 +1,39 @@
+/*.login-box-body{
+  background-color: #009954;
+  color: #ffffff
+}*/
+
+/*#login{
+  background-color: #00A65A
+}*/
+
+#remindMyPassword{
+    color: #009954;
+    text-decoration: underline;
+    line-height: 1cm;
+  }
+  
+  .label{
+    font-size: 100% !important;
+  }
+  
+  .botao{
+    padding: .3em .9em;
+    text-align: right;
+  }
+  
+  a{
+    color: #ffffff;
+  }
+  
+  .form-group {
+    margin: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .breadcrump-color {
+    color: black;
+  }
