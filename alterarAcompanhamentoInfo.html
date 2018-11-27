@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <!-- Ionicons -->
+
+    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css" <!-- Ionicons -->
     <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
     <!-- jvectormap -->
     <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
@@ -22,6 +23,8 @@
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
     <link rel="stylesheet" href="dist/css/style.css">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,11 +119,14 @@
                         <li>
                             <a href="home.html" class="breadcrump-color">Iníco</a>
                         </li>
-                        <li class="active">Acompanhamento</li>
+                        <li>
+                            <a href="visualizacaoAcompanhamento.html" class="breadcrump-color">Acompanhamentos</a>
+                        </li>
+                        <li class="active">Editar acompanhamento</li>
                     </ol>
                     <!-- Conteudo NATHAN -->
                     <div class="box">
-                        <h1 align="center">Realizar acompanhamento</h1>
+                        <h1 align="center">Editar acompanhamento</h1>
                         <hr>
 
                         <form role="form">
@@ -128,15 +134,15 @@
                                 <div>
                                     <div class="form-group">
 
-
-                                        <div class="col-sm-3 col-xs-12">
-                                            <label for="exampleInputPassword1"> <i class="fa fa-calendar"></i> Data da
-                                                atividade</label>
-                                            <div class="input-group date">
-                                                <input type="date" class="form-control pull-right" id="datepicker">
-                                            </div>
-                                            <br>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <select name="selections[]" class="dix" multiple="multiple">
+                                                <option value="SP">São Paulo</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="PR">Paraná</option>
+                                            </select>
                                         </div>
+
                                         <div class="col-sm-10 col-xs-12">
                                             <label>Atividade realizada</label>
                                             <textarea class="form-control" rows="3" placeholder="Descrição da atividade realizada"></textarea>
@@ -164,6 +170,15 @@
                                             </select>
                                             <br>
                                         </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <label for="exampleInputPassword1"> <i class="fa fa-calendar"></i> Data
+                                                da
+                                                atividade</label>
+                                            <div class="input-group date">
+                                                <input type="date" class="form-control pull-right" id="datepicker">
+                                            </div>
+                                            <br>
+                                        </div>
 
                                     </div>
                                     <!--form group-->
@@ -171,7 +186,7 @@
                                     <div class="col-sm-12 col-xs-12">
                                         <a style="margin-left: 10px" type="submit" class="btn btn-success botao pull-right"
                                             href="realizarAcompanhamento.html">Salvar</a>
-                                        <a type="submit" class="btn btn-default botao pull-right" href="home.html">Voltar</a>
+                                        <a type="submit" class="btn btn-default botao pull-right" href="alterarAcompanhamento.html">Voltar</a>
                                     </div>
 
 
@@ -207,6 +222,9 @@
     <script src="dist/js/adminlte.min.js"></script>
     <!-- Sparkline -->
     <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+
+    <script src="bower_components/select2/dist/js/select2.min.js"></script>
+
     <!-- jvectormap  -->
     <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
@@ -218,6 +236,9 @@
     <script src="dist/js/pages/dashboard2.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
