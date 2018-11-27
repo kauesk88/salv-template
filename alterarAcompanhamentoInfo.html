@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="dist/css/style.css">
 
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -116,11 +118,14 @@
                         <li>
                             <a href="home.html" class="breadcrump-color">Iníco</a>
                         </li>
-                        <li class="active">Acompanhamento</li>
+                        <li>
+                            <a href="visualizacaoAcompanhamento.html" class="breadcrump-color">Acompanhamentos</a>
+                        </li>
+                        <li class="active">Editar acompanhamento</li>
                     </ol>
                     <!-- Conteudo NATHAN -->
                     <div class="box">
-                        <h1 align="center">Realizar acompanhamento</h1>
+                        <h1 align="center">Editar acompanhamento</h1>
                         <hr>
 
                         <form role="form">
@@ -128,15 +133,36 @@
                                 <div>
                                     <div class="form-group">
 
+                                        <div class="col-sm-6 col-xs-12">
 
-                                        <div class="col-sm-3 col-xs-12">
-                                            <label for="exampleInputPassword1"> <i class="fa fa-calendar"></i> Data da
-                                                atividade</label>
-                                            <div class="input-group date">
-                                                <input type="date" class="form-control pull-right" id="datepicker">
-                                            </div>
-                                            <br>
+                                            <label>Multiple</label>
+                                            <select class="select2 select2-hidden-accessible" multiple=""
+                                                data-placeholder="Select a State" style="width: 100%;" tabindex="-1"
+                                                aria-hidden="true">
+                                                <option>Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select><span class="select2 select2-container select2-container--default"
+                                                dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple"
+                                                        role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                        tabindex="-1">
+                                                        <ul class="select2-selection__rendered">
+                                                            <li class="select2-search select2-search--inline"><input
+                                                                    class="select2-search__field" type="search"
+                                                                    tabindex="0" autocomplete="off" autocorrect="off"
+                                                                    autocapitalize="none" spellcheck="false" role="textbox"
+                                                                    aria-autocomplete="list" placeholder="Select a State"
+                                                                    style="width: 517.5px;"></li>
+                                                        </ul>
+                                                    </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
                                         </div>
+
+
                                         <div class="col-sm-10 col-xs-12">
                                             <label>Atividade realizada</label>
                                             <textarea class="form-control" rows="3" placeholder="Descrição da atividade realizada"></textarea>
@@ -164,6 +190,15 @@
                                             </select>
                                             <br>
                                         </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <label for="exampleInputPassword1"> <i class="fa fa-calendar"></i> Data
+                                                da
+                                                atividade</label>
+                                            <div class="input-group date">
+                                                <input type="date" class="form-control pull-right" id="datepicker">
+                                            </div>
+                                            <br>
+                                        </div>
 
                                     </div>
                                     <!--form group-->
@@ -171,7 +206,7 @@
                                     <div class="col-sm-12 col-xs-12">
                                         <a style="margin-left: 10px" type="submit" class="btn btn-success botao pull-right"
                                             href="realizarAcompanhamento.html">Salvar</a>
-                                        <a type="submit" class="btn btn-default botao pull-right" href="home.html">Voltar</a>
+                                        <a type="submit" class="btn btn-default botao pull-right" href="alterarAcompanhamento.html">Voltar</a>
                                     </div>
 
 
@@ -218,6 +253,7 @@
     <script src="dist/js/pages/dashboard2.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+
 </body>
 
 </html>
