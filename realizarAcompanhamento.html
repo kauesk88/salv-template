@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <!-- Ionicons -->
+
+    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css" <!-- Ionicons -->
     <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
     <!-- jvectormap -->
     <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
@@ -22,6 +23,8 @@
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
     <link rel="stylesheet" href="dist/css/style.css">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,7 +119,10 @@
                         <li>
                             <a href="home.html" class="breadcrump-color">Iníco</a>
                         </li>
-                        <li class="active">Acompanhamento</li>
+                        <li>
+                            <a href="visualizacaoAcompanhamento.html" class="breadcrump-color">Acompanhamentos</a>
+                        </li>
+                        <li class="active">Novo acompanhamento</li>
                     </ol>
                     <!-- Conteudo NATHAN -->
                     <div class="box">
@@ -128,50 +134,49 @@
                                 <div>
                                     <div class="form-group">
 
+                                        <div class="col-sm-8 col-xs-12">
+                                            <label>Residentes que participaram da atividade </label><br>
+                                            <select name="selections[]" class="dix" multiple="multiple" style="width: 100%;">
+                                                <option value="MR">Mária do Rosário</option>
+                                                <option>Sergio Reis</option>
+                                                <option>João Cancelo</option>
+                                                <option>Everaldo Oliveira</option>
+                                                <option>Conceição Souza</option>
+                                            </select>
+                                        </div>
 
                                         <div class="col-sm-3 col-xs-12">
-                                            <label for="exampleInputPassword1"> <i class="fa fa-calendar"></i> Data da
+                                            <label for="exampleInputPassword1"> <i class="fa fa-calendar"></i> Data
+                                                da
                                                 atividade</label>
                                             <div class="input-group date">
                                                 <input type="date" class="form-control pull-right" id="datepicker">
                                             </div>
                                             <br>
                                         </div>
+
                                         <div class="col-sm-10 col-xs-12">
                                             <label>Atividade realizada</label>
                                             <textarea class="form-control" rows="3" placeholder="Descrição da atividade realizada"></textarea>
                                             <br>
                                         </div>
-                                        <div class="col-sm-10 col-xs-12">
-                                            <label>Funcionários que realizaram a atividade </label>
-                                            <select multiple="" class="form-control">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
-                                                <option>option 5</option>
-                                            </select>
-                                            <br>
-                                        </div>
-                                        <div class="col-sm-10 col-xs-12">
-                                            <label>Residentes que participaram a atividade </label>
-                                            <select multiple="" class="form-control">
-                                                <option>Mária do Rosário</option>
-                                                <option>Sergio Reis</option>
-                                                <option>João Cancelo</option>
-                                                <option>Everaldo Oliveira</option>
-                                                <option>Conceição Souza</option>
-                                            </select>
-                                            <br>
-                                        </div>
 
+                                        <div class="col-sm-8 col-xs-12">
+                                            <label>Funcionários que realizaram a atividade </label><br>
+                                            <select name="selections[]" class="dix" multiple="multiple" style="width: 100%;">
+                                                <option value="CA">Dr(a) Camila</option>
+                                                <option>Dr Saulo</option>
+                                                <option>Dr Camilo</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <!--form group-->
 
                                     <div class="col-sm-12 col-xs-12">
+                                        <br>
                                         <a style="margin-left: 10px" type="submit" class="btn btn-success botao pull-right"
-                                            href="realizarAcompanhamento.html">Salvar</a>
-                                        <a type="submit" class="btn btn-default botao pull-right" href="home.html">Voltar</a>
+                                            href="visualizacaoAcompanhamento.html">Salvar</a>
+                                        <a type="submit" class="btn btn-default botao pull-right" href="visualizacaoAcompanhamento.html">Voltar</a>
                                     </div>
 
 
@@ -207,6 +212,9 @@
     <script src="dist/js/adminlte.min.js"></script>
     <!-- Sparkline -->
     <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+
+    <script src="bower_components/select2/dist/js/select2.min.js"></script>
+
     <!-- jvectormap  -->
     <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
@@ -218,6 +226,9 @@
     <script src="dist/js/pages/dashboard2.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
